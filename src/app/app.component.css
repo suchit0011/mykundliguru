@@ -1,0 +1,20 @@
+.err_msg{
+font-size: 13px;
+color: red;
+padding-top: 1px;
+}
+.bt-hide{
+    display: none;
+}
+#openmodelbtn:hover{
+    cursor: pointer;
+}
+.form-submit{
+    outline: none !important;
+    box-shadow: none !important;
+    color: #ffffff;
+}
+.form-submit:hover{
+  background: #FF7E00 !important;
+    color: #ffffff;
+}

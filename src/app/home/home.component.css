@@ -1,0 +1,132 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  nav#sidenavclose {
+    margin-left: -315px;
+    transition: all 0.5s ease-in-out;
+    width: 275px;
+}
+
+/* .dropdown-is-active{
+    margin-left: -315px;
+} */
+  .subheader{
+      clear: both;
+  }
+
+  .ask_banner_text{
+    color: white !important;
+  }
+  .slider-area .carousel-inner .item .carousel-captions .content h1 {
+    color: white;
+  }
+  .slider-area .carousel-inner .item .carousel-captions .content h2 {
+    font-size: 45px;
+  }
+  .astro_tag{
+    color: #F4BF0B !important;
+  }
+  .select_horoscope:hover{
+    cursor: pointer;
+  }
+  .horoscope_text {
+    margin-bottom: 13px;
+    font-size: 17px;
+    color: #7d7d7d;
+}
+.readque_tag{
+  color: #FF7E00 !important;
+}
+.readque_tag:hover{
+  cursor: pointer;
+}
+i.fa.fa-heart {
+  margin-top: 29px;
+}
+i.fa.fa-graduation-cap {
+  margin-top: 27px;
+}
+i.fa.fa-money {
+  margin-top: 24px;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #FF7E01;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader_body{
+  text-align: center;
+  text-align: -webkit-center;
+}

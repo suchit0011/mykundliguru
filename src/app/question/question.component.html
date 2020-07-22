@@ -1,0 +1,179 @@
+<div class="hs_service_main_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="hs_about_heading_main_wrapper">
+                    <div class="hs_about_heading_wrapper">
+                        <h2>Ideas What to<span> ask</span></h2>
+                        <h4><span></span></h4>
+                        <p>There are some question samples with ideas what type and kind of questions you may ask.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-area ptb-100">
+                <div class="container">
+                    <div class="portfolio-filter clearfix text-center">
+                    </div>
+                    <div class="row" >
+                        <div id="gridWrapper" class="clearfix" >
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='[ "all"]' (click)="askQuestion(questions.cat_name,questionthing,questions.cat_id)" *ngFor="let questions of questionApi; let i=index">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="{{questions.cat_icon}}"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">{{questions.cat_name}}</h2>
+                                        <!-- <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5> -->
+                                        <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='[ "website"]' (click)="askQuestion('marriage',questionthing)">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="flaticon-marry-me"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">marriage</h2>
+                                        <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='["all", "business"]'  (click)="askQuestion('business',questionthing)">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="flaticon-islamic-temple"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">business</h2>
+                                        <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='["all", "website", "business"]' (click)="askQuestion('money',questionthing)">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="fa fa-money" aria-hidden="true"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">money</h2>
+                                        <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='["all", "business"]' (click)="askQuestion('manglik dosha',questionthing)">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="flaticon-engagement-ring"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">Manglik Dosha</h2>
+                                        <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='["all","website"]' (click)="askQuestion('kundli dosha',questionthing)">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="flaticon-animal"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">Kundli Dosha</h2>
+                                        <h5 class="readque_tag">Read Question  <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='["all", "business"]' (click)="askQuestion('love',questionthing)">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">Love</h2>
+                                        <h5 class="readque_tag">Read More <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
+                                data-groups='["all","website"]' (click)="askQuestion('education',questionthing)">
+                                <div class="hs_service_main_box_wrapper">
+                                    <div class="hs_service_icon_main_wrapper">
+                                        <div class="hs_service_icon_wrapper">
+                                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                            <div class="btc_step_overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="hs_service_icon_cont_wrapper">
+                                        <h2 class="readque_tag">Education</h2>
+                                        <h5 class="readque_tag">Read More <i class="fa fa-long-arrow-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!--/#gridWrapper-->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!--/.portfolio-area-->
+        </div>
+    </div>
+</div>
+
+<!-- Ask Question -->
+<ng-template #questionthing>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">{{questionHeading}}</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body question_model" >
+        <h1 *ngIf="questionHeading == 'Kundli Dosha'" class="question_text kundli_dosha_heading"><a>Some time we face many criticle situation due to having some dosha in kundli For ex  - long term dises , money problem, relationship problem, Trouble with debt, divorce situation etc. </a></h1>
+        <ol >
+            <li  *ngFor="let allquestions of allQuestion; let i=index"><h1 class="question_text"><a (click)="askAdded($event)">{{allquestions.question_title}}</a></h1></li>
+        </ol>
+    <!-- <h1 class="question_text"><a (click)="askAdded($event)">{{allquestions.question_title}}</a></h1> -->
+    <!-- <h1 ><a (click)="askAdded($event)">hello df pppp</a></h1> -->
+    <div *ngIf="!questionExist" class="loader_body text-center">
+        <div class="loader"></div>
+    </div>
+    </div>
+</ng-template>
