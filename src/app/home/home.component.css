@@ -130,3 +130,16 @@ i.fa.fa-money {
   text-align: center;
   text-align: -webkit-center;
 }
+.hs_btn_hover{
+  cursor: pointer;
+}
+.hs_effect_btn1{
+display: flex;
+}
+.askfree_text1{
+  font-size: 17px !important;
+  /* margin-left: -38px; */
+  padding-top: 7px;
+  padding-left: 57px;
+  text-transform: capitalize !important;
+}

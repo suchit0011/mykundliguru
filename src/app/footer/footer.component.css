@@ -1,3 +1,13 @@
 .hs_btn_hover:hover{
     cursor: pointer;
 }
+.copyright1 {
+    text-align: start;
+}
+.copyright2 {
+    text-align: end;
+}
+.askfree_text4 {
+    font-size: 16px;
+    text-transform: capitalize;
+}

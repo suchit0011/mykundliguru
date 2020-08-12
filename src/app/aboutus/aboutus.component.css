@@ -1,0 +1,23 @@
+.about_text {
+    margin-bottom: 25px;
+}
+.about_btn_new {
+   
+    text-align: center;
+}
+.hs_btn_hover{
+    cursor: pointer;
+}
+.about_ustext {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 31px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #8080802e;
+    padding-top: 50px;
+}
+.askfree_text2 {
+    font-size: 18px;
+    padding-top: 3px;
+}

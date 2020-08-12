@@ -1,0 +1,39 @@
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #FF7E01;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loader_body{
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  .hs_btn_hover{
+    cursor: pointer;
+  }
+  .horoscope_text {
+    margin-bottom: 13px;
+    font-size: 17px;
+    color: #7d7d7d;
+}
+.select_horoscope:hover{
+    cursor: pointer;
+  }
+  .astro_tag{
+    color: #F4BF0B !important;
+  }  

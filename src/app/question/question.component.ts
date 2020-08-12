@@ -18,9 +18,7 @@ export class QuestionComponent implements OnInit {
     this.allQuestion = [];
     this.questionHeading = question;
     this.modalRef = this.modalService.show(questionthing);
-  console.log('my quest',this.questionHeading);
   this.userservice.getQuebycategory(catId).subscribe((res:any)=>{
-    console.log('all que',res);   
     if(res){
       res.map(value => {
         this.allQuestion.push(value);
@@ -37,7 +35,6 @@ export class QuestionComponent implements OnInit {
   ngOnInit() {
     this.questionApi = []
   this.userservice.getQuecategory().subscribe((res:any)=>{
-  console.log('myres',res);   
   if(res){
     res.map(value => {
       this.questionApi.push(value);

@@ -5,9 +5,11 @@
 <!--  -->
 <div class="hs_top_header_main_Wrapper">
     <div class="container">
-        <div class="hs_header_logo_left hidden-xs">
+        <!-- hidden-xs -->
+        <div class="hs_header_logo_left ">
             <div class="hs_logo_wrapper">
-                <a href="index-2.html"><img src="assets/images/header/logo.png" class="img-responsive" alt="logo"
+                <!-- assets/images/header/logo.png -->
+                <a routerLink=""><img src="assets/images/astrologo2.png" class="img-responsive header_logo" alt="logo"
                         title="Logo" /></a>
             </div>
         </div>
@@ -20,7 +22,9 @@
                 <ul>
                     <li><a  class="hs_btn_hover" id="openmodelbtn" (click)="openModal(template)">Ask Now</a></li>
                 </ul>
+                <h2 class="askfree_text5">It's Free</h2>
             </div>
+            <!-- <h2 class="askfree_text5">It's Free</h2> -->
             <div class="hs_header_add_wrapper hidden-xs hidden-sm">
                 <!-- <div class="hs_header_add_icon">
                     <i class="fa fa-home"></i>
@@ -29,6 +33,7 @@
                     <h5>Reach Us</h5>
                     <p>601 , Ram Nagar Dewas</p>
                 </div> -->
+                
             </div>
             <div class="hs_header_add_wrapper hidden-xs hidden-sm">
                 <!-- <div class="hs_header_add_icon">
@@ -38,7 +43,10 @@
                     <h5>Talk to Astrologers</h5>
                     <p>+91-123456789</p>
                 </div> -->
+                
+
             </div>
+            
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
 
@@ -71,15 +79,25 @@
                     <ul>
                         <li>
                             <div class="dropdown-wrapper menu-button">
-                                <a class="menu-button" routerLink="">Home</a>
+                                <a class="menu-button" routerLink=""  fragment="home" (click)="onRoute()">Home</a>
                             </div>
                         </li>
                         <li>
-                            <a class="menu-button" [routerLink]="['/', 'askquestion']">Ideas to ask</a>
+                            <!-- [routerLink]="['/', 'askquestion']" -->
+                            <a class="menu-button" routerLink="" fragment="ideaAsk" (click)="onRoute()">Ideas to ask</a>
+                        </li>
+                        
+                        <li>
+                            <!-- [routerLink]="['/','aboutsection']" -->
+                            <a class="menu-button" routerLink="" fragment="aboutUs" (click)="onRoute()">About Us</a>
                         </li>
                         <li>
-                            <a class="menu-button" routerLink="aboutus">About Us</a>
+                            <!-- [routerLink]="['/','supportsection']"  -->
+                            <a class="menu-button" routerLink="" fragment="oursupport" (click)="onRoute()">Support</a>
                         </li>
+                        <!-- <li>
+                            <a class="menu-button" [routerLink]="['']" fragment="first" (click)="onRoute()">testing</a>
+                        </li> -->
                         <!-- <li>
                             <div class="dropdown-wrapper menu-button">
                                 <a class="menu-button" href="#">Shop</a>
@@ -106,8 +124,9 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6">
                                 <div class="hs_logo">
-                                    <a routerLink=""><img src="assets/images/content/mobile_logo.png" alt="Logo"
-                                            title="Logo"></a>
+                                    <!-- assets/images/content/mobile_logo.png -->
+                                    <!-- <a routerLink=""><img src="assets/images/astrologo2.png" alt="Logo"
+                                            title="Logo"></a> -->
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6">
@@ -179,17 +198,23 @@
                                                 </form>
                                             </li> -->
                                             <li class="has-children">
-                                                <a routerLink="">Home</a>
+                                                <a routerLink=""  fragment="home"  (click)="onRoute()">Home</a>
                                             </li>
                                             <!-- <li class="has-children">
                                                 <a routerLink="blog">Blog</a>
                                             </li> -->
                                             <!-- .has-children -->
                                             <li class="has-children">
-                                                <a class="has-children" [routerLink]="['/', 'askquestion']">Ideas to ask</a>
+                                                <a class="has-children"  routerLink="" fragment="ideaAsk" (click)="onRoute()">Ideas to ask</a>
                                             </li>
                                             <li class="has-children">
-                                                <a routerLink="aboutus">About US</a>
+                                                <a   routerLink="" fragment="aboutUs"  (click)="onRoute()">About US</a>
+                                            </li>
+                                            <!-- <li class="has-children">
+                                                <a routerLink="privacy">Our Privacy</a>
+                                            </li> -->
+                                            <li class="has-children">
+                                                <a routerLink="" fragment="support" (click)="onRoute()">Support</a>
                                             </li>
                                         </ul>
                                         <!-- .cd-dropdown-content -->
@@ -264,7 +289,80 @@
     </div>
 </div>
 <!-- hs Navigation End -->
-<!--   -->
+<!-- ******************************************************************************************* -->
+
+<!-- <app-home></app-home>
+<app-question id="ideaAsk"></app-question> 
+<section id="aboutUs" class="home-section">
+<app-aboutus ></app-aboutus>
+<h1>dskjdskdsdsdd</h1>
+</section> -->
+<!-- ********************************************************************************************** -->
+<section id="home" class="home-section">
+    <app-home></app-home>
+    <!-- <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2> -->
+    <h2 class="test1"> section </h2>
+</section>
+<section id="ideaAsk" class="home-section">
+    <app-question></app-question> 
+    <!-- <h2>  HOME SECTIONss </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2>
+    <h2>  HOME SECTION </h2> -->
+    <h2 class="test1">  HOME SECTION </h2>
+</section>
+
+<section id="aboutUs" class="about-section">
+    <app-aboutus ></app-aboutus>
+      <!-- <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2>
+      <h2>  ABOUT US SECTION </h2> -->
+      <h2 class="section_change_color">  ABOUT US SECTION </h2>
+</section>
+<section  id="ourhoroscope">
+<app-horoscope></app-horoscope>
+<h2 class="section_change_color">  horoscope SECTION </h2>
+</section>
+<section id="oursupport" class="contact-section">
+    <app-support ></app-support>
+            <!-- <h2>  CONTACT US SECTION </h2>
+      <h2>  CONTACT US SECTION </h2>
+      <h2>  CONTACT US SECTION </h2>
+      <h2>  CONTACT US SECTION </h2>
+      <h2>  CONTACT US SECTION </h2>
+      <h2>  CONTACT US SECTION </h2> -->
+</section>
+ 
 <ng-template #template>
     <div class="modal-header">
         <h4 class="modal-title pull-left">Ask A Question</h4>
@@ -334,8 +432,26 @@
     </div>
 </ng-template>
 
+<!-- on Success template -->
+<!-- (click)="successModal(successtemplate)" -->
+<button class="btn btn-sucess success_btns " id="openmodelsuccessbtn" (click)="successModal(successtemplate)" >555555555555555</button>
+<ng-template #successtemplate>
+    <div class="modal-header success_model_bg">
+        <!-- <h4 class="modal-title pull-left">Success</h4> -->
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true" class="close_success_model">&times;</span>
+        </button>
+    </div> 
+    <div class="modal-body text-center">
+        <h6 class="success_text1"><i class="fa fa-check-circle" aria-hidden="true"></i> We've received your question.</h6>
+        <h6 class="success_text2">We'll get back to you shortly to verify your details and asnwer your questions perfectly.</h6>
+        <!-- <i class="fa fa-instagram"></i> -->
+        <p class="success_text3">Join our group<a href="https://www.facebook.com/groups/2717924665158914/" target="_blank"><i class="fa fa-facebook-square"></i></a> <a href="https://www.instagram.com/onlinefreeastro/" target="_blank"><img src="assets/images/insata_logo.png" alt="insta_logo" class="insta_logo_cl" /></a></p>
+    </div>
+</ng-template>
+
 <!--PAYMENT btn -->
-<div class='pm-button bt-hide' ><a href='https://www.payumoney.com/paybypayumoney/#/2629821098626E01E0213FFBDCCB928D' id="paybtn"><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/22.png' /></a></div> 
+<div class='pm-button bt-hide' ><a href='https://www.payumoney.com/paybypayumoney/#/17DA42C8374BCCD1072501A8BD436BBC' id="paybtn"><img  src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png'  /></a></div> 
 <!--PAYMENT btn -->
 <router-outlet></router-outlet>
 <app-footer></app-footer>

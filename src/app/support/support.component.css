@@ -1,0 +1,35 @@
+.support_anchore{
+        color: blue;
+}
+
+.faq_detail {
+    margin-bottom: 10px;
+}
+.hs_about_progress_main_wrapper{
+    padding-top: 65px !important;
+    padding-bottom: 65px !important;
+}
+.hs_online_main_slider_wrapper {
+    padding-top: 30px !important;
+    padding-bottom: 45px !important;
+}
+.about_btn_new {
+   
+    text-align: center;
+}
+.hs_btn_hover{
+    cursor: pointer;
+}
+.about_ustext {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 31px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #8080802e;
+    padding-top: 50px;
+    margin-bottom: 36px;
+}
+.askfree_text3 {
+    font-size: 17px;
+}

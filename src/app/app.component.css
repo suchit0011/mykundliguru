@@ -18,3 +18,75 @@ padding-top: 1px;
   background: #FF7E00 !important;
     color: #ffffff;
 }
+.header_logo {
+    width: 80%;
+  }
+  .test1{
+      visibility: hidden;
+  }
+ 
+  .section_change_color {
+    color: #F5F4F4 ;
+    background-color: #F5F4F4;
+}
+.success_model_bg{
+    background-color: #ffffff;
+    border: none;
+}
+.success_text1{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #80808038;
+    padding-bottom: 8px;
+    /* color: #aaa; */
+    color: green;
+}
+.success_text2{
+    font-size: 18px;
+    padding-top: 8px;
+    color: #333;
+    line-height: 24px;
+}
+.success_text3{
+    font-size: 14px;
+    color: #333;
+}
+i.fa.fa-facebook-square {
+    font-size: 30px;
+    padding: 10px;
+    color: #4267B2;
+}
+i.fa.fa-instagram {
+    font-size: 30px;
+}
+.success_text3{
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #FF7E00;
+    margin-top: 70px;
+}
+img.insta_logo_cl {
+    /* font-size: 30px; */
+    width: 27px;
+}
+.success_btns{
+    /* display: hidden; */
+    display: none;
+}
+i.fa.fa-check {
+    color: green;
+    margin-right: 6px;
+}
+.close_success_model{
+    font-size: 30px;
+}
+.askfree_text5 {
+    text-align: center;
+    font-size: 18px;
+  
+}
+.hs_btn_hover{
+    bottom: 3px;
+}

@@ -8,6 +8,7 @@ import { HttpClient ,HttpHeaders} from '@angular/common/http';
 export class UserService {
  shareValue = new BehaviorSubject('')
  shareQuestion = new BehaviorSubject('')
+ sharenewRoutes = new BehaviorSubject('')
   constructor(private http: HttpClient) { 
 
   }
@@ -17,9 +18,14 @@ export class UserService {
   shareData(){
     this.shareValue.next('openform');
   }
+  shareRoutes(){
+    this.sharenewRoutes.next('true');
+    // return true;
+    // getroute
+    // this.sharenewRoutes.next(getroute);
+  }
   askFilledque(getque){
     this.shareQuestion.next(getque)
-    // console.log('ask added',getque);
   }
   submitUser(userDetil){
 

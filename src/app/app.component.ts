@@ -2,6 +2,7 @@ import { Component,ViewChild } from '@angular/core';
 import {UserService} from 'src/app/_services/user.service';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Router} from "@angular/router";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,13 +15,20 @@ export class AppComponent {
   submitted = false;
   autofilledQue;
   submitProcess:boolean = false;
-  constructor(private userservice:UserService,private modalService: BsModalService,private formBuilder: FormBuilder) { 
+  constructor(private router:Router, private userservice:UserService,private modalService: BsModalService,private formBuilder: FormBuilder) { 
     this.userservice.shareValue.subscribe(res=>{
       if(res == "openform"){
         document.getElementById("openmodelbtn").click();
-        console.log('+++++++++++')
-        this.registerForm.patchValue({
-          question:''
+        // this.registerForm.patchValue({
+        //   question:''
+        // })
+        this.registerForm.setValue({
+          question:'',
+          birthplace: '',
+          gender: '',
+          dob: '',
+          birthtime: '',
+          contact:''
         })
       }
     })
@@ -28,9 +36,17 @@ export class AppComponent {
       if(res){
         document.getElementById("openmodelbtn").click();
         this.autofilledQue = res;
-        console.log('+++++++csscsd++++',res)
-        this.registerForm.patchValue({
-          question:res
+        // this.registerForm.patchValue({
+        //   question:res
+        // })
+       
+        this.registerForm.setValue({
+          question:res,
+          birthplace: '',
+          gender: '',
+          dob: '',
+          birthtime: '',
+          contact:''
         })
       }
     })
@@ -47,6 +63,7 @@ export class AppComponent {
     gender:'Male'
   })
   }
+
   openModal(template) {
     // this.registerForm.reset();
     this.submitProcess = false;
@@ -59,6 +76,19 @@ export class AppComponent {
     this.submitted = false;
     this.modalRef = this.modalService.show(template);
   }
+
+  successModal(successtemplate) {
+    // this.registerForm.reset();
+    // this.submitProcess = false;
+    // this.registerForm.patchValue({
+    //   gender:'Male'
+    // })
+    // this.registerForm.patchValue({
+    //   question:''
+    // })
+    // this.submitted = false;
+    this.modalRef = this.modalService.show(successtemplate);
+  }
   get f() { return this.registerForm.controls; }
   onSubmit() {
     this.submitted = true;
@@ -69,18 +99,23 @@ export class AppComponent {
     }else{
       this.submitProcess = true;
 this.userservice.submitUser(this.registerForm.value).subscribe(res=>{
-  console.log('form submitted',res);
   if(res){
     this.modalRef.hide()
     this.submitted = false;
-    document.getElementById("paybtn").click();
+    document.getElementById("openmodelsuccessbtn").click();
+    // this.successModal('successtemplate');
+    // document.getElementById("paybtn").click();
   }
 })
 
     }
 }
+test(){
+  // document.getElementById("openmodelsuccessbtn").click();
+  // this.successModal('successtemplate');
+}
 getTest(){
-  console.log('bt working');
+ 
   document.getElementById("paybtn").click();
 }
   openNav() {
@@ -88,8 +123,10 @@ getTest(){
   }
   
    closeNav() {
-     console.log('close working')
     document.getElementById("sidenavclose").style.marginLeft= "-315px";
   }
+  onRoute(){
+    this.userservice.shareRoutes();
   
+  }
 }

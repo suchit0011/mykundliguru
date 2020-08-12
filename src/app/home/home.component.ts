@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,ViewChild,ElementRef} from '@angular/core';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -20,17 +20,21 @@ export class HomeComponent implements OnInit {
  horoscopeRes;
  questionHeading;
  horoscopeExist:boolean = true;
-  constructor(  private route: ActivatedRoute,   private router: Router,private userservice:UserService,private formBuilder: FormBuilder,private modalService: BsModalService) { }
+ element: HTMLElement;
+ @ViewChild('info',{static:true}) public infos:ElementRef;
+  constructor(  private route: ActivatedRoute,   private router: Router,private userservice:UserService,private formBuilder: FormBuilder,private modalService: BsModalService) { 
+    
+  }
   openhoroscopeModal(dailyhoroscope,sign) {
     this.horoscopeExist = false;
     this.modalRef = this.modalService.show(dailyhoroscope);
-    console.log('+++',sign)
+
     this.horoscopeRes = "";
     this.horoscopeName = sign;
     this.userservice.getHoroscope(sign).subscribe(res=>{
       this.horoscopeExist = true;
       this.horoscopeRes = res;
-      console.log('+++ horo',res)
+    
     })
   }
 openForm(){
@@ -45,25 +49,32 @@ openForm(){
 //   this.modalRef.hide();
 //   this.userservice.askFilledque(getque.target.innerText);
 // }
-  ngOnInit() {
-    
-this.route.paramMap.subscribe(params => { 
-  console.log('110',params)
-  let segment = params.get('askquestion');
-  if(segment == 'askquestion'){
-    window.location.hash = '';
-    window.location.hash = 'testOne';
-  }else{
-    window.scroll(0,0);
-  }
-  console.log('110',params.get('askquestion'))
-    // this.id = params.get('id'); 
-});
-    // window.location.hash = '';
-    // window.location.hash = 'testOne';
-  // this.userservice.getHoroscope().subscribe(res=>{
-  //   console.log('+++ horo',res)
-  // })
-  }
 
+  ngOnInit() {
+
+// this.route.paramMap.subscribe(params => { 
+//   console.log('88888',params)
+//   let segment = params.get('askquestion');
+//   if(segment == 'askquestion'){
+//     console.log('110',params)
+    
+//     window.location.hash = '';
+//     window.location.hash = 'testOne';
+//   }else if(segment == 'aboutsection'){
+//     console.log('111',params)
+//     window.location.hash = 'aboutOne';
+//   }
+//   else if(segment == 'supportsection'){
+//     console.log('112',params)
+//     window.location.hash = 'supportOne';
+//   }
+ 
+// });
+
+
+
+
+
+  }
+ 
 }
