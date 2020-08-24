@@ -29,18 +29,29 @@ export class UserService {
   }
   submitUser(userDetil){
 
-    let body = new URLSearchParams();
-    body.set('name', userDetil.username);
-    body.set('gender', userDetil.gender);
-    body.set('contact_no', userDetil.contact);
-    body.set('ques_title', userDetil.question);
-    body.set('birth_place', userDetil.birthplace);
-    body.set('dob', userDetil.dob);
-    body.set('birth_time', userDetil.birthtime);
-    let options = {
-      headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
-  };
-    return this.http.post('https://www.myshoetips.com/api/submit_new_user_ques',body.toString(),options);
+  //   let body = new URLSearchParams();
+  //   body.set('name', userDetil.username);
+  //   body.set('gender', userDetil.gender);
+  //   body.set('contact_no', userDetil.contact);
+  //   body.set('ques_title', userDetil.question);
+  //   body.set('birth_place', userDetil.birthplace);
+  //   body.set('dob', userDetil.dob);
+  //   body.set('birth_time', userDetil.birthtime);
+  //   let options = {
+  //     headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
+  // };
+    // return this.http.post('https://www.myshoetips.com/api/submit_new_user_ques',body.toString(),options);
+    let userfield = {
+      name : userDetil.username,
+      birth_place : userDetil.birthplace,
+      gender : userDetil.gender,
+      dob : userDetil.dob,
+      tob : userDetil.birthtime,
+      contact_no : userDetil.contact,
+      question : userDetil.question
+    }
+    let b= JSON.stringify(userfield);
+    return this.http.post('https://onlineastro.in/api/Astro/register/',b);
   }
 
   getHoroscope(sign){

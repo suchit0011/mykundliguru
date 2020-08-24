@@ -1,0 +1,371 @@
+{
+    "demo": {
+        "title": "Translation demo",
+        "text": "This is a simple demonstration app for ngx-translate"
+    },
+    "banner": {
+        "title": "Ask A Free Question",
+        "text": "FROM THE BEST ",
+        "hn_text":"ASTROLOGERS"
+    },
+    "askIdea":{
+       "generalQuestionTag": "IDEAS WHAT TO",
+       "generalQuestionTag1":"ASK",
+       "generalQuestioninner":"There are some question samples with ideas what type and kind of questions you may ask.",
+       "readTag":"Read Question"
+    },
+    "QuestionTag": {
+        "data": [
+          {
+            "title": "CAREER",
+            "icon_pic":"flaticon-success",
+            "id": "career1"
+          },
+          {
+            "title": "MARRIAGE",
+            "icon_pic":"flaticon-marry-me",
+            "id": "marriage1"
+          },
+          {
+            "title": "BUSINESS",
+            "icon_pic":"flaticon-islamic-temple",
+            "id": "business1"
+          },
+          {
+            "title": "MONEY",
+            "icon_pic":"fa fa-money",
+            "id": "money1"
+          },
+          {
+            "title": "MANGLIK DOSHA",
+            "icon_pic":"flaticon-engagement-ring",
+            "id": "manglik1"
+          },
+          {
+            "title": "KUNDLI DOSHA",
+            "icon_pic":"flaticon-animal",
+            "id": "kundlidosh1"
+          },
+          {
+            "title": "LOVE",
+            "icon_pic":"fa fa-heart",
+            "id": "love1"
+          },
+          {
+            "title": "EDUCATION",
+            "icon_pic":"fa fa-graduation-cap",
+            "id": "education1"
+          }
+        
+        ]
+    }
+    ,
+    "Questions": {
+        "data": [
+          {
+            
+            "que_detail":["how can I get a job of my dream?","I have faced many interview but got rejected. what should i do for select in interview?",
+            "I have received several job offers from different company. Which company should I join?",
+            "is this right time to find new job?",
+            "what should I do for feel confident during interview ?",
+            "I want to become a ............. Will I be good in it?",
+            "Will I get a pramotion this year?",
+            "Should I go another city for job?",
+            "Should I accept a job offer in another city?",
+            "should i accept a new job offer ?",
+            "When will I get a job?",
+            "I want to do business but my family is forcing me to do a job. what should i do?"
+            ],
+            "uniid": "career1"
+          },
+          {
+            "que_detail":["When will I get married?",
+            "I am not having a baby. what should i do?",
+            "Will I get pregnant this year?",
+            "What will my husband look like?",
+            "Will I marry a my prince of dreams?",
+            "Will I marry a millionaire?",
+            "what Should i do love marriage or arranged marriage?",
+            "What kind of person should I marry?",
+            "Should i marry my girlfriend?",
+            "Should i marry my boyfriend?",
+            "My husband fight me what should i do?"
+            ],
+            "uniid": "marriage1"
+          },
+          {
+            "que_detail":["I want to run my own business. in which sphere will I be more successful?",
+            "When will be a good time to invest my money?",
+            "I'm losing business, how do I turn it into profit?",
+            "My business is in downgrade period. should i close it or find money and try to revive it?",
+            "should i merge my company with my major competitor?",
+            "what will happen with my business in the upcoming year?",
+            "I am struggling with my business recently and despite many efforts, it seems that there is a bad luck. How long will it continue?",
+            "Will my business grow in the coming year?",
+            "Can I trust my business partner?",
+            "If I start online business will I become successful?",
+            "Should i do business in partnership?",
+            "can I be a good businessman?",
+            "should i invest money in share market?"
+            ],
+            "uniid": "business1"
+          },
+          {
+            "que_detail":["I am facing debts and losses? how can i get rid off from this?",
+            "Will my life improve If I start to give money to charity?",
+           "I earn more than my husband and I think he feels sad . what should i do for mantain this thing?",
+           "should i get a loan from a bank?",
+           "What should I do to improve my financial situation?",
+           "Will I become rich? If yes when?",
+            "should i invest my money in share market?",
+            "should i invest my money in property?",
+            "when will my financial situation improve?",
+            "When will I become financially independent?",
+            "Why can't I save money?"
+        ],
+            "uniid": "money1"
+          },
+          {
+            "que_detail":["What is Manglik Dosha? is it available in my kundli ? what is disadvantage of this dosha? Can a Manglik marry a non-Manglik?",
+            "Can I marry a Manglik girl if I’m not one? Is the Mangal Dosha sign real?",
+             "Can I marry a Manglik boy if I’m not one? Is the Mangal Dosha sign real?",
+            "I am girl with mangalik and the boy is not mangalik but I want to marry a guy what should I do?",
+            "I am boy with mangalik and the girl is not mangalik but I want to marry a girl what should I do?"],
+            "uniid": "manglik1"
+          },
+          {
+            "que_detail":["Is there any dosh in my kundli? if yes then how can i get rid off this dosh?"],
+            "uniid": "kundlidosh1"
+          },
+          {
+            "que_detail":["what Should i do love marriage or arranged marriage?",
+            "I love someone but i am confused whether she like me or not? how could i know?",
+            "How can i forget my girlfriend?",
+            "I started a new relationship, but I still think about my Ex . How can i forget her?",
+            "Will my husband stay loyal and faithful for the rest of our lives?",
+            "Will it be good for me if I get back with my Ex?",
+            "Why did we break up?",
+            "Should I marry with my boyfriend?",
+            "When will I meet the true love of my life?",
+            "I love someone but she doesn't like me? how she will love me?"    
+        ],
+            "uniid": "love1"
+          },
+          {
+            "que_detail":["Will I get admission into my choice of college this year?",
+                    "could i become IAS or IPS?",
+                    "should i do preparation for government job?",
+                    "when will i get government job?",
+                    "Will i pass the exam this samester?",
+                    "Will i pass the exam this year?",
+                    "How do i focus on study?",
+                    "My dream is to become a CEO one day. what should i do after 12th?",
+                    "which field help me to boost my career for ex- engineer, lawyer?",
+                    "After graduation should I continue education or start working?",
+                    "which subject should i select to me to boost my career for ex- science, commerce?"
+            ],
+            "uniid": "education1"
+          }
+        
+        ]
+    },
+    "Aboutus":{
+      "aboutusheading":"About Us",
+        "abouttagone":"Our expert and 10+ year’s experienced professional astrologers perform an in-depth study on the Vedic astrology and Lal kitab astrology on each Kundali for hours to provide you more accurate solutions of your problems.",
+        "abouttagtwo":"We’ve measured more than 500+ kundali around the globe and contributed happiness in the life of our clients with accurate research and easy-to-do remedies and solutions of kundali doshas.",
+        "abouttagthree":"We guarantee the solution with accuracy of time-frame to make your life happy and successful."
+
+    } ,
+    "horoscopeIdea":{
+      "horoscopeTag": "CHOOSE YOUR",
+      "horoscopeTag1":"ZODIAC SIGN",
+      "horoscopeinner":"And know what stars are telling about your present life"
+   },
+      "horoscopeTag1": {
+      "data": [
+        {
+          "title": "Aries",
+          "id": "aries1",
+          "imgiconsign":"flaticon-aries-sign"
+        },
+        {
+         "title": "Taurus",
+         "id": "taurus1",
+         "imgiconsign":"flaticon-taurus-astrological-sign-symbol"
+        },
+        {
+         "title": "Gemini",
+         "id": "gemini1",
+         "imgiconsign":"flaticon-gemini-zodiac-sign-symbol"
+        },
+        {
+         "title": "Cancer",
+         "id": "cancer1",
+         "imgiconsign":"flaticon-cancer"
+        },
+        {
+         "title": "Leo",
+          "id": "leo1",
+          "imgiconsign":"flaticon-leo"
+        },
+        {
+         "title": "Virgo",
+          "id": "virgo1",
+          "imgiconsign":"flaticon-virgo-astrological-symbol-sign"
+        }
+      ]
+  }  , 
+  "horoscopeTag2": {
+    "data": [
+      {
+       "title": "Libra",
+        "id": "libra1",
+        "imgiconsign":"flaticon-libra"
+      },
+      {
+       "title": "Scorpio",
+        "id": "scorpio1",
+        "imgiconsign":"flaticon-scorpio"
+      },
+      {
+       "title": "Sagittarius",
+        "id": "sagittarius1",
+        "imgiconsign":"flaticon-sagittarius-arrow-sign"
+      },
+      {
+       "title": "Capricorn",
+        "id": "capricorn1",
+        "imgiconsign":"flaticon-capricorn"
+      },
+      {
+       "title": "Aquarius",
+        "id": "aquarius1",
+        "imgiconsign":"flaticon-aquarius-zodiac-sign-symbol"
+      },
+      {
+       "title": "Pisces",
+        "id": "pisces1",
+        "imgiconsign":"flaticon-pisces-astrological-sign"
+      }
+    
+    ]
+}, 
+"horoscopemodelTag1": {
+  "data": [
+    {
+      "id": "aries1",
+      "horodescription":"You can get support from in-laws.If you are a businessman or doing any work of your own, then this month will be beneficial for you, you will gain money.you can meet an old friend but A member of the household may be ill at this time you Need to be a little careful.Therefore, this month is very good in economic matters."
+    },
+    {
+     "id": "taurus1",
+     "horodescription":"Father will get prestige in the society. you need to Take care of mother's health. In economic matters also this month will be beneficial to some extent. Wife will get support. you Can get rid of debt. There may be some differences from in-laws."
+    },
+    {
+     "id": "gemini1",
+     "horodescription":"There will be conflict or estrangement from relatives but relationship with maternal uncle will be more sweeter.You can also change location for business or job. There will be some financial problem that will have to be faced."
+    },
+    {
+     "id": "cancer1",
+     "horodescription":"Business will be normal. There may be some ups and downs in the job. Workload will be more.There will be full support of the family but there can be some differences with the elder brother.Take care of wife's health."
+    },
+    {
+      "id": "leo1",
+      "horodescription":"This month will be very good politically New people will increase recognition. If you are doing some work by joining the government, then you will get success as well as the decision of the old stuck work will be decided.Need to take care of one's own health. The possibility of promotion in job is more."
+    },
+    {
+      "id": "virgo1",
+      "horodescription":"This month is very good in financial matters. Promotion and benefits are expected in both job and business. Health of parents will improve. Husband and wife relationship will be sweeter. If you love someone then you can express your feeling this month. There may be some health problems."
+    },
+    {
+      "id": "libra1",
+      "horodescription":"You may face financial problems this month.Expenditure burden will be high and earnings will be less, as well as losses in business are also expected. But there is a possibility of promotion of wife. Take care of mother's health."
+    },
+    {
+      "id": "scorpio1",
+      "horodescription":"This month is very good in financial matters. There are chances of profit in business. This is a great time to start a new business. There is a possibility of promotion in job also. Relations with in-laws will be better and father will get respect in society."
+    },
+    {
+      "id": "sagittarius1",
+      "horodescription":"Mind will remain disturbed due to any family member's rift. Financial problem will remain. Mind will remain turbulent due to excessive expenditure. If you are doing job, then you are lucky because you are very likely to suffer loss in business. Take care of parents' health."
+    },
+    {
+      "id": "capricorn1",
+      "horodescription":"Husband-wife relationship will be more sweeter. You can also get child happiness. Assistance will be received from officer in the job. If you are doing business then you will progress. Parents will be in good health. There is a possibility of conflict with the in-laws."
+    },
+    {
+      "id": "aquarius1",
+      "horodescription":"Take care of your health. Take care of parents' health. This month is very good in financial matters. If money is held back then you will get it back. Also there will be growth in business and jobs. Relationship with wife will be good."
+    },
+    {
+      "id": "pisces1",
+      "horodescription":"This month is very good in terms of love affair. If you love someone then this time is very good to express. There is also a possibility of economic benefit. It is necessary to take care of the health of sister or brother. It is possible to grow in jobs and business."
+    }
+  
+  ]
+},
+"Oursupport":{
+  "supportmainheading":"Our Support",
+  "supportheading":"SPEAK TO OUR EXPERT !",
+  "supporttext1":"We have the team of authentic and experienced professional Astrologers. Our mission is provide the online accurate future predictions to you by analysing your birth chart and your astrology sign.",
+  "supporttext2":"Have any technical issues or want any questions? We’re available 24x7 to help you. Write your queries to us on",
+  "supportmail":" support@onlineastro.in"
+}  ,
+"Faqquestionfirst":{
+  
+    "quetitle": "How it Works?",
+    "quepara1":"When you submit your Birth details along with your question to us, our support team will call you to confirm your details, and the kundali will be provided to one from our expert astrologer’s team. Astrologers will start analyzing and researching your kundali and will create a detailed prediction and solutions based on both Vedic and Lal kitab astrology. This prediction and solution will be sent to you on your provided email id and whatsApp number.",
+    "quepara2":"Once you go through to your prediction, you can request a callback to understand it with our experts."
+
+},
+"Faqquestionsecond":{
+  "quetitle": "Why does it take 24 to 48 hours for a prediction result?",
+      "quepara1":"Our mission is to provide you detailed and accurate prediction and 100% working solutions to your problems and solve them forever. For such, our expert takes time to analyze each kundali personally to get at the root of the problem. Then we share easy-to-perform remedies and solutions based on your kundali and planetary positions, so that anyone can do the solutions easily and can get satisfied with our service.",
+      "quepara2":""
+},
+"Faqquestionthird":{
+  "quetitle": "How will I receive my Predictions?",
+      "quepara1":"You’ll receive your prediction on your provided email id and whatsApp number within 48 hours of detail submission.",
+      "quepara2":"One you go through your prediction, you can request a callback to our expert to understand it clearly."
+},
+"Faqquestionfourth":{
+  "quetitle": "Is this service free?",
+  "quepara1":"yes, This service is absolutely free.",
+  "quepara2":""
+},
+"Faqquestionfifth":{
+  "quetitle": "Do you sell gems, lockets, Yantras etc..?",
+   "quepara1":"Currently, We are more focused on providing detailed-oriented and accurate prediction with solutions problems of your life. We’re not selling astrology related items like gems, yantras etc, but based on your problem, we can recommend you the best things that you can buy from anywhere to get rid of your life problems.",
+   "quepara2":""
+},
+"Faqquestion":{
+  "data": [
+    
+    {
+      "quetitle": "Why does it take 24 to 48 hours for a prediction result?",
+      "quepara1":"Our mission is to provide you detailed and accurate prediction and 100% working solutions to your problems and solve them forever. For such, our expert takes time to analyze each kundali personally to get at the root of the problem. Then we share easy-to-perform remedies and solutions based on your kundali and planetary positions, so that anyone can do the solutions easily and can get satisfied with our service.",
+      "quepara2":""
+    },
+    {
+      "quetitle": "How will I receive my Predictions?",
+      "quepara1":"You’ll receive your prediction on your provided email id and whatsApp number within 48 hours of detail and payment submission.",
+      "quepara2":"One you go through your prediction, you can request a callback to our expert to understand it clearly."
+    },
+    {
+      "quetitle": "Is this service free?",
+      "quepara1":"yes, This service is absolutely free.",
+      "quepara2":""
+    },
+    {
+      "quetitle": "Do you sell gems, lockets, Yantras etc..?",
+      "quepara1":"Currently, We are more focused on providing detailed-oriented and accurate prediction with solutions problems of your life. We’re not selling astrology related items like gems, yantras etc, but based on your problem, we can recommend you the best things that you can buy from anywhere to get rid of your life problems.",
+      "quepara2":""
+    }
+  ]
+} ,
+"footertext":{
+  "footertext1":"Our expert and 10+ year’s experienced professional astrologers perform an in-depth study on the Vedic astrology and Lal kitab astrology on each Kundali for hours to provide you more accurate solutions of your problems.",
+  "footertext2":"We have the team of authentic and experienced professional Astrologers. Our mission is provide the online accurate future predictions to you by analysing your birth chart and your astrology sign.",
+  "footertext3":"Have any technical issues or want any questions? We’re available 24x7 to help you. Write your queries to us on",
+  "emailid":"support@onlineastro.in"
+}  
+}

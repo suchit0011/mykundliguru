@@ -375,6 +375,7 @@
 	}
 	.hs_cycle_main_wrapper{
 		margin-left:0;
+		display: none;
 	}
 	.hs_news_slider_bg_wrapper{
 		padding-top:100px;
@@ -508,7 +509,7 @@
 		display:none;
 	}
 	.hs_btn_wrapper li a{
-		width:180px;
+		width:134px;
 	}
 }
 @media (max-width: 880px){

@@ -4,9 +4,10 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="hs_about_heading_main_wrapper">
                     <div class="hs_about_heading_wrapper">
-                        <h2>Ideas What to<span> ask</span></h2>
+                         <!-- <h1>{{ 'demo.title' | translate }}</h1> -->
+                        <h2>{{ 'askIdea.generalQuestionTag' | translate }}<span> {{ 'askIdea.generalQuestionTag1' | translate }}</span></h2>
                         <h4><span></span></h4>
-                        <p>There are some question samples with ideas what type and kind of questions you may ask.
+                        <p>{{ 'askIdea.generalQuestioninner' | translate }}
                         </p>
                     </div>
                 </div>
@@ -17,19 +18,26 @@
                     </div>
                     <div class="row" >
                         <div id="gridWrapper" class="clearfix" >
+                            <!-- *ngFor="let questions of questionApi; let i=index" -->
+                            <!-- *ngFor="let service of ('QuestionTag.data' | translate)" -->
+                            <!--  (click)="askQuestion(service.title,questionthing,service.id)" -->
+                            <!-- (click)="askQuestion(questions.title,questionthing,questions.cat_id)" -->
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 portfolio-wrapper III_column"
-                                data-groups='[ "all"]' (click)="askQuestion(questions.cat_name,questionthing,questions.cat_id)" *ngFor="let questions of questionApi; let i=index">
+                            *ngFor="let service of ('QuestionTag.data' | translate)" 
+                                data-groups='[ "all"]' (click)="askQuestion(service.title,questionthing,service.id)"  >
                                 <div class="hs_service_main_box_wrapper">
                                     <div class="hs_service_icon_main_wrapper">
                                         <div class="hs_service_icon_wrapper">
-                                            <i class="{{questions.cat_icon}}"></i>
+                                            <!-- <i class="{{questions.cat_icon}}"></i> -->
+                                            <i class="{{service.icon_pic}}"></i>
                                             <div class="btc_step_overlay"></div>
                                         </div>
                                     </div>
                                     <div class="hs_service_icon_cont_wrapper">
-                                        <h2 class="readque_tag">{{questions.cat_name}}</h2>
+                                        <!-- <h2 class="readque_tag">{{questions.cat_name}}</h2> -->
+                                        <h2 class="readque_tag">{{service.title}}</h2>
                                         <!-- <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5> -->
-                                        <h5 class="readque_tag">Read Question <i class="fa fa-long-arrow-right"></i></h5>
+                                        <h5 class="readque_tag">{{ 'askIdea.readTag' | translate }} <i class="fa fa-long-arrow-right"></i></h5>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +176,7 @@
     <div class="modal-body question_model" >
         <h1 *ngIf="questionHeading == 'Kundli Dosha'" class="question_text kundli_dosha_heading"><a>Some time we face many criticle situation due to having some dosha in kundli For ex  - long term dises , money problem, relationship problem, Trouble with debt, divorce situation etc. </a></h1>
         <ol >
-            <li  *ngFor="let allquestions of allQuestion; let i=index"><h1 class="question_text"><a (click)="askAdded($event)">{{allquestions.question_title}}</a></h1></li>
+            <li  *ngFor="let allquestions of allQuestion; let i=index"><h1 class="question_text"><a (click)="askAdded($event)">{{allquestions}}</a></h1></li>
         </ol>
     <!-- <h1 class="question_text"><a (click)="askAdded($event)">{{allquestions.question_title}}</a></h1> -->
     <!-- <h1 ><a (click)="askAdded($event)">hello df pppp</a></h1> -->

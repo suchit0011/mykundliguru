@@ -9,12 +9,23 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                     <div class="content">
-                                        <h1 data-animation="animated bounceInLeft ask_banner_text">Ask A Free Question
+                                         <!-- <h1>{{ 'demo.title' | translate }}</h1> -->
+                                        <h1 data-animation="animated bounceInLeft" class="ask_banner_text">
+                                            {{ 'banner.title' | translate }}
+                                            <!-- Ask A Free Question -->
                                              <!-- <i
                                                 class="fa fa-inr astro_tag" aria-hidden="true"></i> -->
                                             </h1>
-                                        <h2 data-animation="animated zoomInDown">from the best <span
-                                                class="astro_tag">ASTROLOGERS</span></h2>
+                                        <h2 data-animation="animated zoomInDown" class="ask_banner_text1">
+                                            {{ 'banner.text' | translate }}
+                                            <!-- {{ 'banner.hn_text2' | translate }} -->
+                                            <!-- from the best -->
+                                             <span
+                                                class="astro_tag">
+                                                <!-- ASTROLOGERS -->
+                                                {{ 'banner.hn_text' | translate }}
+                                                <!-- {{ 'banner.text1' | translate }} -->
+                                            </span></h2>
                                         <!-- <p data-animation="animated bounceInUp" class="astro_tag">This offer is valid
                                             for first two question.</p> -->
                                         <div class="hs_effect_btn hs_effect_btn1">

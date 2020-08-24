@@ -19,7 +19,7 @@ padding-top: 1px;
     color: #ffffff;
 }
 .header_logo {
-    width: 80%;
+    width: 100%;
   }
   .test1{
       visibility: hidden;
@@ -89,4 +89,37 @@ i.fa.fa-check {
 }
 .hs_btn_hover{
     bottom: 3px;
+}
+.select_lg_icon{
+    float: right !important;
+}
+p.change_lg {
+    display: inline;
+    color: #ffff;
+    padding-right: 12px;
+}
+.lg_xs_lg{
+    display: contents;
+}
+
+.hs_navi_cart_wrapper {
+    
+    width: 160px !important;
+}
+.hs_navi_cart_wrapper:hover {
+    cursor: pointer;
+}
+.hs_logo {
+    padding-top: 22px;
+}
+i.fa.fa-language.lg_xs_lg {
+    color: white;
+}
+@media(max-width:359px){
+    .change_lg{
+        font-size: 12px;
+    }
+    .hs_logo {
+        padding-top: 19px;
+    }
 }

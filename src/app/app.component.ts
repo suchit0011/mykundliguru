@@ -3,6 +3,7 @@ import {UserService} from 'src/app/_services/user.service';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {Router} from "@angular/router";
+import {TranslateService} from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,7 +16,24 @@ export class AppComponent {
   submitted = false;
   autofilledQue;
   submitProcess:boolean = false;
-  constructor(private router:Router, private userservice:UserService,private modalService: BsModalService,private formBuilder: FormBuilder) { 
+  isLang:boolean;
+  // isLang = true;
+  detectonPage = "";
+  constructor(private translate: TranslateService,private router:Router, private userservice:UserService,private modalService: BsModalService,private formBuilder: FormBuilder) { 
+    this.detectonPage = localStorage.getItem('lgkey');
+    console.log('+-', this.detectonPage)
+    // 
+    if(this.detectonPage == "" || this.detectonPage == null){
+    translate.setDefaultLang('en');
+    this.isLang = true;
+    }else if(this.detectonPage == "hindi"){
+      this.isLang = false;
+      translate.setDefaultLang('hn');
+    }else if(this.detectonPage == "english"){
+      this.isLang = true;
+      translate.setDefaultLang('en');
+    }
+    // 
     this.userservice.shareValue.subscribe(res=>{
       if(res == "openform"){
         document.getElementById("openmodelbtn").click();
@@ -24,6 +42,7 @@ export class AppComponent {
         // })
         this.registerForm.setValue({
           question:'',
+          username:'',
           birthplace: '',
           gender: '',
           dob: '',
@@ -42,6 +61,7 @@ export class AppComponent {
        
         this.registerForm.setValue({
           question:res,
+          username:'',
           birthplace: '',
           gender: '',
           dob: '',
@@ -63,7 +83,25 @@ export class AppComponent {
     gender:'Male'
   })
   }
+// *************
 
+useLanguage() {
+  // language: string
+  console.log('lg++')
+  // this.translate.use(language);
+  if(this.isLang == true){
+    console.log('lg++ 11')
+    this.isLang = false;
+    this.translate.use('hn');
+    localStorage.setItem('lgkey', 'hindi');
+  }else{
+    console.log('lg++ 22')
+    this.isLang = true;
+    this.translate.use('en');
+    localStorage.setItem('lgkey', 'english');
+  }
+}
+// **************
   openModal(template) {
     // this.registerForm.reset();
     this.submitProcess = false;
@@ -99,6 +137,7 @@ export class AppComponent {
     }else{
       this.submitProcess = true;
 this.userservice.submitUser(this.registerForm.value).subscribe(res=>{
+  console.log('my ress',res);
   if(res){
     this.modalRef.hide()
     this.submitted = false;

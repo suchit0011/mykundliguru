@@ -3,9 +3,9 @@
         <div class="hs_sign_heading_wrapper">
             <div class="hs_about_heading_main_wrapper">
                 <div class="hs_about_heading_wrapper">
-                    <h2>Choose Your <span>Zodiac Sign</span></h2>
+                    <h2>{{ 'horoscopeIdea.horoscopeTag' | translate }}  <span>{{ 'horoscopeIdea.horoscopeTag1' | translate }} </span></h2>
                     <h4><span></span></h4>
-                    <p>And know what stars are telling about your present life.
+                    <p>{{ 'horoscopeIdea.horoscopeinner' | translate }}  
                     </p>
                 </div>
             </div>
@@ -163,24 +163,26 @@
 
             </div>
         </div>
+        <!-- horoscope part 1 -->
         <div class="hs_sign_left_wrapper">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div (click)="openhoroscopeModal(dailyhoroscope,'Aries')"
+            <div class="row"   >
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hs_horo_1"   *ngFor="let service of ('horoscopeTag1.data' | translate)" >
+                    <!-- (click)="openhoroscopeModal(dailyhoroscope,service.title)" -->
+                    <div (click)="openhoroscopeModal(dailyhoroscope,service.id,service.title)"
                         class="hs_sign_left_tabs_wrapper hs_sign_left_tabs_border_wrapper1 select_horoscope">
                         <div class="hs_slider_tabs_icon_wrapper">
-                            <i class="flaticon-aries-sign"></i>
+                            <i class="{{service.imgiconsign}}"></i>
                         </div>
                         <div class="hs_slider_tabs_icon_cont_wrapper">
                             <ul>
-                                <li>Aries</li>
+                                <li>{{service.title}}</li>
                                
                             </ul>
                         </div>
                         <span></span>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div (click)="openhoroscopeModal(dailyhoroscope,'Taurus')"
                         class="hs_sign_left_tabs_wrapper hs_sign_left_tabs_wrapper_2 hs_sign_left_tabs_border_wrapper2 select_horoscope">
                         <div class="hs_slider_tabs_icon_wrapper">
@@ -194,8 +196,8 @@
                         </div>
                         <span></span>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                </div> -->
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div (click)="openhoroscopeModal(dailyhoroscope,'Gemini')"
                         class="hs_sign_left_tabs_wrapper hs_sign_left_tabs_wrapper_2 hs_sign_left_tabs_border_wrapper3 select_horoscope">
                         <div class="hs_slider_tabs_icon_wrapper">
@@ -250,27 +252,28 @@
                         </div>
                         <span></span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
+         <!-- horoscope part 2 -->
         <div class="hs_sign_right_wrapper visible-xs">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div (click)="openhoroscopeModal(dailyhoroscope,'Libra')"
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hs_horo_1" *ngFor="let service of ('horoscopeTag2.data' | translate)">
+                    <div (click)="openhoroscopeModal(dailyhoroscope,service.id,service.title)"
                         class="hs_sign_left_tabs_wrapper hs_sign_right_tabs_border_wrapper1 select_horoscope">
                         <span></span>
 
                         <div class="hs_slider_tabs_icon_wrapper">
-                            <i class="flaticon-libra"></i>
+                            <i class="{{service.imgiconsign}}"></i>
                         </div>
                         <div class="hs_slider_tabs_icon_cont_wrapper">
                             <ul>
-                                <li>Libra</li>
+                                <li>{{service.title}}</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div (click)="openhoroscopeModal(dailyhoroscope,'Scorpio')"
                         class="hs_sign_left_tabs_wrapper hs_sign_left_tabs_wrapper_2 hs_sign_right_tabs_border_wrapper2 select_horoscope">
                         <span></span>
@@ -345,7 +348,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="hs_sign_center_wrapper hidden-sm hidden-xs">
@@ -501,24 +504,25 @@
 
             </div>
         </div>
+           <!-- horoscope part 2 for mobile -->
         <div class="hs_sign_right_wrapper hidden-xs">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div (click)="openhoroscopeModal(dailyhoroscope,'Libra')"
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hs_horo_1"  *ngFor="let service of ('horoscopeTag2.data' | translate)">
+                    <div (click)="openhoroscopeModal(dailyhoroscope,service.id,service.title)"
                         class="hs_sign_left_tabs_wrapper hs_sign_right_tabs_border_wrapper1 select_horoscope">
                         <span></span>
-                        <div class="hs_slider_tabs_icon_cont_wrapper">
+                        <div class="hs_slider_tabs_icon_cont_wrapper right_horo_text">
                             <ul>
-                                <li>Libra</li>
+                                <li>{{service.title}}</li>
                                
                             </ul>
                         </div>
                         <div class="hs_slider_tabs_icon_wrapper">
-                            <i class="flaticon-libra"></i>
+                            <i class="{{service.imgiconsign}}"></i>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div (click)="openhoroscopeModal(dailyhoroscope,'Scorpio')"
                         class="hs_sign_left_tabs_wrapper hs_sign_left_tabs_wrapper_2 hs_sign_right_tabs_border_wrapper2 select_horoscope">
                         <span></span>
@@ -589,7 +593,7 @@
                             <i class="flaticon-pisces-astrological-sign"></i>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -606,10 +610,10 @@
     </div>
     <div class="modal-body">
         <span *ngIf="horoscopeExist">
-            <h3 class="horoscope_text">Favourable Color : {{horoscopeRes?.color}}</h3>
+            <!-- <h3 class="horoscope_text">Favourable Color : {{horoscopeRes?.color}}</h3>
             <h3 class="horoscope_text">Compatibility : {{horoscopeRes?.compatibility}}</h3>
-            <h3 class="horoscope_text">Lucky Number : {{horoscopeRes?.lucky_number}}</h3>
-            <h3 class="horoscope_text">Description : {{horoscopeRes?.description}}</h3>
+            <h3 class="horoscope_text">Lucky Number : {{horoscopeRes?.lucky_number}}</h3> -->
+            <h3 class="horoscope_text">Description : {{allhoroscope}}</h3>
         </span>
         <div *ngIf="!horoscopeExist" class="loader_body text-center">
             <div class="loader"></div>

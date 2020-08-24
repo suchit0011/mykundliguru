@@ -12,13 +12,16 @@ import { BlogreadComponent } from './blogread/blogread.component';
 import { RouterModule, Routes,ExtraOptions } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClient,HttpClientModule } from '@angular/common/http';
 import { QuestionComponent } from './question/question.component';
 import { PaymentstatusComponent } from './paymentstatus/paymentstatus.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { SupportComponent } from './support/support.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { HoroscopeComponent } from './horoscope/horoscope.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
 // const router: Routes = [
 //   { path: '', component: HomeComponent },
 //   { path: 'aboutus', component: AboutusComponent },
@@ -54,10 +57,20 @@ const routerOptions: ExtraOptions = {
     ScrollToModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  }),
+
+
     RouterModule.forRoot([
       { path: 'privacy', component: PrivacyComponent },
       { path: 'blogread', component: BlogreadComponent },
       { path: 'blog', component: BlogComponent },
+      { path: 'privacy', component: BlogComponent },
       // { path: '', component: HomeComponent },
       // { path: ':askquestion', component: HomeComponent },
     ],{ anchorScrolling: 'enabled'}),
@@ -66,4 +79,8 @@ const routerOptions: ExtraOptions = {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 // { path: '**', component: HomeComponent,pathMatch: 'full' }

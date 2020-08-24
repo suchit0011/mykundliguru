@@ -38,14 +38,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h6 class="about_ustext">Our Support</h6>
+                    <h6 class="about_ustext">{{ 'Oursupport.supportmainheading' | translate }}</h6>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="hs_online_slider_left_cont">
-                        <h2>speak to <span>our expert !</span></h2>
-                        <p>We have the team of authentic and experienced professional Astrologers. Our mission is provide the online accurate future predictions to you by analysing your birth chart and your astrology sign.</p>
-                        <p>Have any technical issues or want any questions? We’re available 24x7 to help you. 
-                            Write your queries to us on <a href="mailto:support@onlineastro.in" class="support_anchore">support@onlineastro.in</a> 
+                        <h2><span>{{ 'Oursupport.supportheading' | translate }}</span></h2>
+                        <p>{{ 'Oursupport.supporttext1' | translate }}</p>
+                        <p> {{ 'Oursupport.supporttext2' | translate }}<a href="mailto:support@onlineastro.in" class="support_anchore">{{ 'Oursupport.supportmail' | translate }}</a> 
                             <!-- or <a href="https://wa.me/8982546428" target="_blank" class="support_anchore">click here to start whatsApp Chat.</a> -->
                         </p>
                     </div>
@@ -76,41 +75,42 @@
                     <div class="hs_about_progress_cont_left">
                         <h2>Questions (faq’s)</h2>
                         <h4><span></span></h4>
-                        <div class="accordionFifteen">
+                        <div class="accordionFifteen" >
                             <div class="panel-group" id="accordionFifteenLeft" role="tablist">
-                                <div class="panel panel-default truck_pannel">
+                                <div class="panel panel-default truck_pannel"  >
                                     <div class="panel-heading desktop">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordionFifteenLeft"
-                                                href="#collapseFifteenLeftone" aria-expanded="true"> How it Works?</a>
+                                                href="#collapseFifteenLeftone" aria-expanded="true">{{ 'Faqquestionfirst.quetitle' | translate }} </a>
                                         </h4>
                                     </div>
                                     <div id="collapseFifteenLeftone" class="panel-collapse collapse in"
                                         aria-expanded="true" role="tabpanel">
                                         <div class="panel-body">
                                             <div class="panel_cont">
-                                                <p class="faq_detail">When you submit your Birth details along with your question to us, our support team will call you to confirm your details, and the kundali will be provided to one from our expert astrologer’s team.  Astrologers will start analyzing and researching your kundali and will create a detailed prediction and solutions based on both Vedic and Lal kitab astrology. This prediction and solution will be sent to you on your provided email id and whatsApp number. 
+                                                <p class="faq_detail">{{ 'Faqquestionfirst.quepara1' | translate }} 
                                                 </p>
-                                                <p class="faq_detail">Once you go through to your prediction, you can request a callback to understand it with our experts. </p>
+                                                <p class="faq_detail">{{ 'Faqquestionfirst.quepara2' | translate }}  </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- /.panel-default -->
-                                <div class="panel panel-default truck_pannel">
+                                <div class="panel panel-default truck_pannel"  >
                                     <div class="panel-heading horn">
                                         <h4 class="panel-title">
                                             <a class="collapsed" data-toggle="collapse"
                                                 data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftTwo"
-                                                aria-expanded="false">Why does it take 24 to 48 hours for a prediction result?</a>
+                                                aria-expanded="false">{{ 'Faqquestionsecond.quetitle' | translate }}</a>
                                         </h4>
                                     </div>
                                     <div id="collapseFifteenLeftTwo" class="panel-collapse collapse"
                                         aria-expanded="false" style="height: 0px;" role="tabpanel">
                                         <div class="panel-body">
                                             <div class="panel_cont">
-                                                <p class="faq_detail">Our mission is to provide you detailed and accurate prediction and 100% working solutions to your problems and solve them forever. For such, our expert takes time to analyze each kundali personally to get at the root of the problem. Then we share easy-to-perform remedies and solutions based on your kundali and planetary positions, so that anyone can do the solutions easily and can get satisfied with our service.  
+                                                <p class="faq_detail">{{ 'Faqquestionsecond.quepara1' | translate }}
                                                 </p>
+                                                <p class="faq_detail">{{ 'Faqquestionsecond.quepara2' | translate }} </p>
                                             </div>
                                         </div>
                                     </div>
@@ -121,7 +121,7 @@
                                         <h4 class="panel-title">
                                             <a class="collapsed" data-toggle="collapse"
                                                 data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftThree"
-                                                aria-expanded="false">How will I receive my Predictions?
+                                                aria-expanded="false">{{ 'Faqquestionthird.quetitle' | translate }}
                                             </a>
                                         </h4>
                                     </div>
@@ -129,8 +129,8 @@
                                         aria-expanded="false" style="height: 0px;" role="tabpanel">
                                         <div class="panel-body">
                                             <div class="panel_cont">
-                                                <p class="faq_detail">You’ll receive your prediction on your provided email id and whatsApp number within 48 hours of detail and payment submission. </p>
-                                                <p class="faq_detail">One you go through your prediction, you can request a callback to our expert to understand it clearly. </p>
+                                                <p class="faq_detail">{{ 'Faqquestionthird.quepara1' | translate }} </p>
+                                                <p class="faq_detail">{{ 'Faqquestionthird.quepara2' | translate }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@
                                         <h4 class="panel-title">
                                             <a class="collapsed" data-toggle="collapse"
                                                 data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftFour"
-                                                aria-expanded="false">Is this service free?
+                                                aria-expanded="false">{{ 'Faqquestionfourth.quetitle' | translate }}
                                             </a>
                                         </h4>
                                     </div>
@@ -149,10 +149,8 @@
                                         aria-expanded="false" style="height: 0px;" role="tabpanel">
                                         <div class="panel-body">
                                             <div class="panel_cont">
-                                                <p>yes, This service is absolutely free.
+                                                <p>{{ 'Faqquestionfourth.quepara1' | translate }}
                                                 </p>
-                                                <!-- <p>No, This service is not free but as compared to other popular online astrology services, we are taking nominal and easily-affordable charges that allow us to maintain our services to help others.
-                                                </p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +161,7 @@
                                         <h4 class="panel-title">
                                             <a class="collapsed" data-toggle="collapse"
                                                 data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftFive"
-                                                aria-expanded="false">Do you sell gems, lockets, Yantras etc..?
+                                                aria-expanded="false">{{ 'Faqquestionfifth.quetitle' | translate }}
                                             </a>
                                         </h4>
                                     </div>
@@ -171,8 +169,7 @@
                                         aria-expanded="false" style="height: 0px;" role="tabpanel">
                                         <div class="panel-body">
                                             <div class="panel_cont">
-                                                <p>Currently, We are more focused on providing detailed-oriented and accurate prediction with solutions  problems of your life. We’re not selling astrology related items like gems, yantras etc, but based on your problem, we can recommend you the best things that you can buy from anywhere to get rid of your life problems. 
-
+                                                <p>{{ 'Faqquestionfifth.quepara1' | translate }}
                                                 </p>
                                             </div>
                                         </div>

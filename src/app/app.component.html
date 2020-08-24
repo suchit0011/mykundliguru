@@ -5,6 +5,7 @@
 <!--  -->
 <div class="hs_top_header_main_Wrapper">
     <div class="container">
+        <!-- <h1>{{ 'demo.title' | translate }}</h1> -->
         <!-- hidden-xs -->
         <div class="hs_header_logo_left ">
             <div class="hs_logo_wrapper">
@@ -124,6 +125,12 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6">
                                 <div class="hs_logo">
+
+                                    <a class="menu-button" (click)="useLanguage()">
+                                        <p class="change_lg" *ngIf="isLang">हिंदी में पढ़े</p>
+                                        <p class="change_lg" *ngIf="!isLang">Read In English</p>
+                                        <i class="fa fa-language lg_xs_lg" aria-hidden="true"></i>
+                                    </a>
                                     <!-- assets/images/content/mobile_logo.png -->
                                     <!-- <a routerLink=""><img src="assets/images/astrologo2.png" alt="Logo"
                                             title="Logo"></a> -->
@@ -214,7 +221,7 @@
                                                 <a routerLink="privacy">Our Privacy</a>
                                             </li> -->
                                             <li class="has-children">
-                                                <a routerLink="" fragment="support" (click)="onRoute()">Support</a>
+                                                <a routerLink="" fragment="oursupport" (click)="onRoute()">Support</a>
                                             </li>
                                         </ul>
                                         <!-- .cd-dropdown-content -->
@@ -284,6 +291,18 @@
                         </div>
                     </div>
                 </div> -->
+               
+                <div class="hs_navi_cart_wrapper select_lg_icon">
+                    <div class="dropdown-wrapper menu-button lg_menu_btn">
+                        <!-- href="#"  -->
+                        <a class="menu-button" (click)="useLanguage()">
+                            <p class="change_lg" *ngIf="isLang">हिंदी में पढ़े</p>
+                            <p class="change_lg" *ngIf="!isLang">Read In English</p>
+                            <i class="fa fa-language lg_xs_lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+           
             </div>
         </div>
     </div>

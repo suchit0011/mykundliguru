@@ -143,3 +143,19 @@ display: flex;
   padding-left: 57px;
   text-transform: capitalize !important;
 }
+.ask_banner_text {
+  line-height: 49px;
+}
+.ask_banner_text1 {
+  line-height: 53px;
+}
+@media(max-width:429px){
+  span.astro_tag {
+      line-height: 55px !important;
+  }
+}
+@media(max-width:338px){
+  .ask_banner_text1 {
+    line-height: 64px;
+  }
+}
